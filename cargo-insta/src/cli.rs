@@ -169,7 +169,7 @@ struct TestCommand {
     #[structopt(long)]
     target: Option<String>,
     /// Do not run `cargo test --doc` after `cargo nextest`, even if test specifiers would otherwise include doctests.
-    #[structopt(long)]
+    #[structopt(long, short = "N")]
     disable_nextest_doctest: bool,
     /// Follow up with review.
     #[structopt(long)]
