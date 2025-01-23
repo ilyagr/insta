@@ -1016,6 +1016,7 @@ fn prepare_test_runner<'snapshot_ref>(
     };
     let mut prevents_doc_run = false;
     if cmd.test_runner_options.disable_nextest_doctest {
+        eprintln!("Suppressing doctests");
         prevents_doc_run = true;
     }
     if cmd.target_args.all || cmd.target_args.workspace {
