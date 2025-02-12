@@ -59,6 +59,7 @@ use itertools::Itertools;
 use similar::udiff::unified_diff;
 use tempfile::TempDir;
 
+mod allow_duplicates;
 mod binary;
 mod delete_pending;
 mod inline;
